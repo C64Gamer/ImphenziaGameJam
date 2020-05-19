@@ -5,29 +5,29 @@ namespace Core
     public class SpaceShipController : MonoBehaviour
     {
 
-        [Header("General Settings")] public bool isActive = true;
+        [Header("General Settings")]
         public float shipSpeed = 1;
         public float sideForce = 130;
         public float maxAngle = 35;
-        public float resetSpeed = 130;
-
+       
         // Update is called once per frame
         void Update()
         {
-            CheckMaxFlightAngle();
+            //TODO Implement movement over acceleration and cleanup code
+
             DoBasicMovement();
+            
+            CheckMaxFlightAngle();
         }
 
         private void CheckMaxFlightAngle()
         {
             var currentZRotation = UnityEditor.TransformUtils.GetInspectorRotation(transform).z;
             
-            //TODO Cleanup code
             if (currentZRotation < -maxAngle)
             {
                 Vector3 tmp = transform.rotation.eulerAngles;
                 tmp.z = -maxAngle;
-                Debug.Log(tmp);
                 transform.rotation = Quaternion.Euler(tmp);
             }
 
