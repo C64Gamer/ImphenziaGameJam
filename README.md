@@ -33,8 +33,6 @@ Roles:
 You are completely free in what tools you are using excepting the Unity3d game engine. If you have no idea what programs you should use here are some suggestions:
 
 - **Unity3D 2019.3.12f1** ( game engine )
-
-
 - **Blender 2.82** ( 3d modeling tool )
 - **GIT** ( software version control )
 - **Sourcetree, GitKraken** ( GUI for git )
@@ -50,4 +48,4 @@ See the list of [contributors](https://github.com/C64Gamer/ImphenziaGameJam/cont
 
 ## License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details
